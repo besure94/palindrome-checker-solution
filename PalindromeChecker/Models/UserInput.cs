@@ -1,3 +1,5 @@
+using System;
+
 namespace PalindromeChecker.Models
 {
   public class UserInput
@@ -16,7 +18,10 @@ namespace PalindromeChecker.Models
 
     public string ReverseWord()
     {
-      return "ollidamra";
+      char[] userStringArray = Word.ToCharArray();
+      Array.Reverse(userStringArray);
+      string reversedString = new string(userStringArray);
+      return reversedString;
     }
   }
 }
