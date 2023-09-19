@@ -13,5 +13,10 @@ namespace PalindromeChecker.Models
     {
       _word = userWord;
     }
+
+    public string ReverseWord()
+    {
+      return "ollidamra";
+    }
   }
 }

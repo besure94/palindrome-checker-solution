@@ -32,5 +32,12 @@ namespace PalindromeChecker.Tests
       Assert.AreEqual(newWord, newUserInput.Word);
     }
 
+    [TestMethod]
+    public void ReverseWord_ReversesWordInUserInput_String()
+    {
+      UserInput inputtedWord = new UserInput("armadillo");
+      string reversedWord = inputtedWord.ReverseWord();
+      Assert.AreEqual("ollidamra", reversedWord);
+    }
   }
 }
