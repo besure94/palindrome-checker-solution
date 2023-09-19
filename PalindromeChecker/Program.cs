@@ -7,8 +7,7 @@ namespace PalindromeChecker
   {
     static void Main()
     {
-      Word testWord = new Word();
-      Console.WriteLine(testWord.GetType());
+
     }
   }
 }
