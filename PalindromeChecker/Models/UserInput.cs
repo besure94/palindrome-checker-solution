@@ -1,6 +1,6 @@
 namespace PalindromeChecker.Models
 {
-  public class Palindrome
+  public class UserInput
   {
     private string _word;
     public string Word
@@ -9,7 +9,7 @@ namespace PalindromeChecker.Models
       set { _word = value; }
     }
 
-    public Palindrome(string userWord)
+    public UserInput(string userWord)
     {
       _word = userWord;
     }
