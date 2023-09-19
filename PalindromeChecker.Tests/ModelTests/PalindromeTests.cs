@@ -22,5 +22,14 @@ namespace PalindromeChecker.Tests
       string result = newPalindrome.Word;
       Assert.AreEqual(userWord, result);
     }
+
+    [TestMethod]
+    public void SetWord_SetsValueOfWord_Void()
+    {
+      Palindrome newPalindrome = new Palindrome("kayak");
+      string newWord = "civic";
+      newPalindrome.Word = newWord;
+      Assert.AreEqual(newWord, newPalindrome.Word);
+    }
   }
 }
