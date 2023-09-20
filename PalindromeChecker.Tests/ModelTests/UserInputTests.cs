@@ -39,5 +39,13 @@ namespace PalindromeChecker.Tests
       bool palindromeResult = inputtedWord.IsPalindrome();
       Assert.AreEqual(false, palindromeResult);
     }
+
+    [TestMethod]
+    public void IsPalindrome_ChecksIfWordIsPalindrome_Bool()
+    {
+      UserInput wordToCheck = new UserInput("civic");
+      bool IsPalindromeResult = wordToCheck.IsPalindrome();
+      Assert.AreEqual(true, IsPalindromeResult);
+    }
   }
 }
