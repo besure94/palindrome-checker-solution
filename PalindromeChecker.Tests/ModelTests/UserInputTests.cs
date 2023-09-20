@@ -76,8 +76,24 @@ namespace PalindromeChecker.Tests
     public void IsPalindrome_ChecksPalindromeForSpaces_Bool()
     {
       UserInput stringWithSpaces = new UserInput("race car");
-      bool IsPalindromeWithSpaces = stringWithSpaces.IsPalindrome();
-      Assert.AreEqual(true, IsPalindromeWithSpaces);
+      bool isPalindromeWithSpaces = stringWithSpaces.IsPalindrome();
+      Assert.AreEqual(true, isPalindromeWithSpaces);
     }
+
+    [TestMethod]
+    public void IsPalindrome_ChecksIfNumberIsPalindrome_Bool()
+    {
+      UserInput numberPalindrome = new UserInput("10101");
+      bool isNumberPalindrome = numberPalindrome.IsPalindrome();
+      Assert.AreEqual(true, isNumberPalindrome);
+    }
+
+    // [TestMethod]
+    // public void IsPalindrome_ChecksIfPhraseIsPalindrome_Bool()
+    // {
+    //   UserInput palindromePhrase = new UserInput("Sit on a potato pan, Otis.");
+    //   bool isPhrasePalindrome = palindromePhrase.IsPalindrome();
+    //   Assert.AreEqual(true, isPhrasePalindrome);
+    // }
   }
 }
