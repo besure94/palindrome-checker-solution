@@ -64,6 +64,14 @@ namespace PalindromeChecker.Tests
       Assert.AreEqual(true, capitalizedBool);
     }
 
+    [TestMethod]
+    public void IsPalindrome_ChecksPalindromeForUpperAndLowerCaseSpelling_Bool()
+    {
+      UserInput alternatingCaseString = new UserInput("RaCeCaR");
+      bool upperAndLowerCaseBool = alternatingCaseString.IsPalindrome();
+      Assert.AreEqual(true, upperAndLowerCaseBool);
+    }
+
     // [TestMethod]
     // public void IsPalindrome_ChecksPalindromeForSpaces_Bool()
     // {
