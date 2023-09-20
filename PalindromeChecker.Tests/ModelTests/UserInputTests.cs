@@ -47,5 +47,13 @@ namespace PalindromeChecker.Tests
       bool IsPalindromeResult = wordToCheck.IsPalindrome();
       Assert.AreEqual(true, IsPalindromeResult);
     }
+
+    [TestMethod]
+    public void IsPalindrome_ChecksStringForPunctuation_Bool()
+    {
+      UserInput userString = new UserInput("level!");
+      bool palindromeBool = userString.IsPalindrome();
+      Assert.AreEqual(false, palindromeBool);
+    }
   }
 }
