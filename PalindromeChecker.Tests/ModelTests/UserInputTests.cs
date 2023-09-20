@@ -33,11 +33,11 @@ namespace PalindromeChecker.Tests
     }
 
     [TestMethod]
-    public void ReverseWord_ReversesWordInUserInput_String()
+    public void IsPalindrome_ChecksIfWordIsNotPalindrome_Bool()
     {
       UserInput inputtedWord = new UserInput("armadillo");
-      string reversedWord = inputtedWord.ReverseWord();
-      Assert.AreEqual("ollidamra", reversedWord);
+      bool palindromeResult = inputtedWord.IsPalindrome();
+      Assert.AreEqual(false, palindromeResult);
     }
   }
 }

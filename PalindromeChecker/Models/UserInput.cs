@@ -16,12 +16,20 @@ namespace PalindromeChecker.Models
       _word = userWord;
     }
 
-    public string ReverseWord()
+    public bool IsPalindrome()
     {
       char[] userStringArray = Word.ToCharArray();
       Array.Reverse(userStringArray);
       string reversedString = new string(userStringArray);
-      return reversedString;
+      int length = reversedString.Length;
+      for (int i = 0; i < length / 2; i++)
+      {
+        if (reversedString[i] != reversedString[length - 1 - i])
+        {
+          return false;
+        }
+      }
+      return true;
     }
   }
 }
