@@ -49,11 +49,27 @@ namespace PalindromeChecker.Tests
     }
 
     [TestMethod]
-    public void IsPalindrome_ChecksStringForPunctuation_Bool()
+    public void IsPalindrome_ChecksPalindromeForPunctuation_Bool()
     {
       UserInput userString = new UserInput("level!");
       bool palindromeBool = userString.IsPalindrome();
       Assert.AreEqual(false, palindromeBool);
     }
+
+    [TestMethod]
+    public void IsPalindrome_ChecksPalindromeForUpperCaseSpelling_Bool()
+    {
+      UserInput capitalizedString = new UserInput("ROTATOR");
+      bool capitalizedBool = capitalizedString.IsPalindrome();
+      Assert.AreEqual(true, capitalizedBool);
+    }
+
+    // [TestMethod]
+    // public void IsPalindrome_ChecksPalindromeForSpaces_Bool()
+    // {
+    //   UserInput stringWithSpaces = new UserInput("race car");
+    //   bool IsPalindromeWithSpaces = stringWithSpaces.IsPalindrome();
+    //   Assert.AreEqual(true, IsPalindromeWithSpaces);
+    // }
   }
 }
