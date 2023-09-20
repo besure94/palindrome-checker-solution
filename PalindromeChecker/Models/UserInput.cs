@@ -13,7 +13,7 @@ namespace PalindromeChecker.Models
 
     public UserInput(string userWord)
     {
-      _word = userWord;
+      _word = userWord.ToLower();
     }
 
     public bool IsPalindrome()
