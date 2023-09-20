@@ -9,9 +9,9 @@ namespace PalindromeChecker
     {
       Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Hello!");
-      Console.WriteLine("A palindrome is any word, number, or string of words that reads the same both backwards or forwards.");
-      Console.WriteLine("Would you like to check if a word, number, or string of words is a palindrome?");
-      Console.WriteLine("Please enter a word, number, or a string of words.");
+      Console.WriteLine("A palindrome is any word, number, or a string of words or special characters that reads the same both backwards or forwards.");
+      Console.WriteLine("Would you like to check if a word, number, or a string of words or special characters is a palindrome?");
+      Console.WriteLine("Please enter a word, number, or a string of words or special characters.");
       string userInput = Console.ReadLine();
       string userInfo = userInput;
       UserInput user = new UserInput(userInfo);
