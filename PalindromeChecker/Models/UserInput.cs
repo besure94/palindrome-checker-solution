@@ -28,6 +28,10 @@ namespace PalindromeChecker.Models
         {
           return false;
         }
+        else if (reversedString.Contains(' '))
+        {
+          return true;
+        }
       }
       return true;
     }

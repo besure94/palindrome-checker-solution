@@ -72,12 +72,12 @@ namespace PalindromeChecker.Tests
       Assert.AreEqual(true, upperAndLowerCaseBool);
     }
 
-    // [TestMethod]
-    // public void IsPalindrome_ChecksPalindromeForSpaces_Bool()
-    // {
-    //   UserInput stringWithSpaces = new UserInput("race car");
-    //   bool IsPalindromeWithSpaces = stringWithSpaces.IsPalindrome();
-    //   Assert.AreEqual(true, IsPalindromeWithSpaces);
-    // }
+    [TestMethod]
+    public void IsPalindrome_ChecksPalindromeForSpaces_Bool()
+    {
+      UserInput stringWithSpaces = new UserInput("race car");
+      bool IsPalindromeWithSpaces = stringWithSpaces.IsPalindrome();
+      Assert.AreEqual(true, IsPalindromeWithSpaces);
+    }
   }
 }
